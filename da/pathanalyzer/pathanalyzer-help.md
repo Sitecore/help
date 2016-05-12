@@ -1,39 +1,23 @@
 # Kom i gang med Path Analyzer
 The Path Analyzer er et program, der gør det muligt at oprette et kort, der viser de sekventielle stier, som kontakter tager som de navigere gennem din hjemmeside. Du kan se de stier, som kontakter tage, mens interagere med kampagner, og på vej til at konvertere på forretningskritiske aktiviteter såsom mål og resultater.
 
-Kort ##
-Kort er en visuel repræsentation af de stier, der kontakter tager via din hjemmeside. Kort består af tre grundelementer:
-- Tree - den grundlæggende struktur i et kort, der indeholder stier, eller grene, udstrålende ud fra kortet centrale knudepunkt.
-- Path - bestå af grupper af knuder, der repræsenterer de sekventielle sider, kontakter har interageret med.
-- Nodes - de enkelte sider, som en kontakt har besøgt. Adskillige knudepunkter sammen danner en sti.
-### Kort nøgle
-Når du læser en sti analysator kort, størrelsen og farven af ​​knuderne og linierne mellem noder giver dig oplysninger om, hvilke stier giver flest besøg og værdi til din organisation. Farven på en node indeholder oplysninger om værdien per besøg, at knuden producerer.
-### Kort visninger
-Når du bruger Sti Analyzer at oprette kort, er der fire forskellige visninger, som du kan vælge fra at modtage dine oplysninger.
-- Radial
-- Lodret
-- Vandret
-- tabel
-Hver visning giver dig forskellige fordele til, hvordan du modtager kortet oplysninger, for eksempel, giver dig et overblik eller forenkle strukturen, så du bedre kan følge de enkelte stier på mindre kort.
+## Maps
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare urna est, non efficitur est sagittis sed. Etiam et diam rhoncus, pretium arcu vitae, lacinia neque. In lacinia eros ac porta varius. Duis eu diam vitae nisi porta blandit nec sed ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sapien nibh, accumsan ut purus vitae, ornare hendrerit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas maximus urna sodales tellus laoreet, vitae accumsan diam condimentum. Vivamus pellentesque, augue volutpat consectetur consequat, arcu ante commodo nisl, eu semper eros nulla laoreet massa. Cras consectetur mattis condimentum. Proin cursus neque non fermentum pellentesque. Vestibulum ac eros eu sapien pharetra sagittis sed ut nulla. Nulla facilisi.
 
-### Kort Operations
-#### Filter et kort ved sti
-#### Filter et kort ved målinger
-#### Eksporter et kort
+### Map key
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare urna est, non efficitur est sagittis sed. Etiam et diam rhoncus, pretium arcu vitae, lacinia neque. In lacinia eros ac porta varius. Duis eu diam vitae nisi porta blandit nec sed ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sapien nibh, accumsan ut purus vitae, ornare hendrerit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas maximus urna sodales tellus laoreet, vitae accumsan diam condimentum. Vivamus pellentesque, augue volutpat consectetur consequat, arcu ante commodo nisl, eu semper eros nulla laoreet massa. Cras consectetur mattis condimentum. Proin cursus neque non fermentum pellentesque. Vestibulum ac eros eu sapien pharetra sagittis sed ut nulla. Nulla facilisi.
 
-## Rapporter
-### Mest besøgte
-Stierne, der genererer den højeste trafik
-### Mest værdifulde
-Stierne, der genererer den højeste engagement værdi
-### Mest værdifulde og besøgte
-Stierne, der genererer den højeste engagement værdi og den højeste trafik
-### Mest effektive
-Stierne på dit websted, der genererer den højeste værdi per besøg
-### Stier uden værdi
-Stierne, der ikke genererer nogen engagement værdi
-### Optimering kandidater
-Stierne, som modtager et stort antal af besøg, men ikke genererer høj værdi per besøg
+### Map views
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare urna est, non efficitur est sagittis sed. Etiam et diam rhoncus, pretium arcu vitae, lacinia neque. In lacinia eros ac porta varius. Duis eu diam vitae nisi porta blandit nec sed ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sapien nibh, accumsan ut purus vitae, ornare hendrerit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas maximus urna sodales tellus laoreet, vitae accumsan diam condimentum. Vivamus pellentesque, augue volutpat consectetur consequat, arcu ante commodo nisl, eu semper eros nulla laoreet massa. Cras consectetur mattis condimentum. Proin cursus neque non fermentum pellentesque. Vestibulum ac eros eu sapien pharetra sagittis sed ut nulla. Nulla facilisi.
 
-## tragte
-## Ordliste
+### Map Operations
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare urna est, non efficitur est sagittis sed. Etiam et diam rhoncus, pretium arcu vitae, lacinia neque. In lacinia eros ac porta varius. Duis eu diam vitae nisi porta blandit nec sed ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sapien nibh, accumsan ut purus vitae, ornare hendrerit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas maximus urna sodales tellus laoreet, vitae accumsan diam condimentum. Vivamus pellentesque, augue volutpat consectetur consequat, arcu ante commodo nisl, eu semper eros nulla laoreet massa. Cras consectetur mattis condimentum. Proin cursus neque non fermentum pellentesque. Vestibulum ac eros eu sapien pharetra sagittis sed ut nulla. Nulla facilisi.
+
+## Reports
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare urna est, non efficitur est sagittis sed. Etiam et diam rhoncus, pretium arcu vitae, lacinia neque. In lacinia eros ac porta varius. Duis eu diam vitae nisi porta blandit nec sed ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sapien nibh, accumsan ut purus vitae, ornare hendrerit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas maximus urna sodales tellus laoreet, vitae accumsan diam condimentum. Vivamus pellentesque, augue volutpat consectetur consequat, arcu ante commodo nisl, eu semper eros nulla laoreet massa. Cras consectetur mattis condimentum. Proin cursus neque non fermentum pellentesque. Vestibulum ac eros eu sapien pharetra sagittis sed ut nulla. Nulla facilisi.
+
+## Funnels
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare urna est, non efficitur est sagittis sed. Etiam et diam rhoncus, pretium arcu vitae, lacinia neque. In lacinia eros ac porta varius. Duis eu diam vitae nisi porta blandit nec sed ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sapien nibh, accumsan ut purus vitae, ornare hendrerit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas maximus urna sodales tellus laoreet, vitae accumsan diam condimentum. Vivamus pellentesque, augue volutpat consectetur consequat, arcu ante commodo nisl, eu semper eros nulla laoreet massa. Cras consectetur mattis condimentum. Proin cursus neque non fermentum pellentesque. Vestibulum ac eros eu sapien pharetra sagittis sed ut nulla. Nulla facilisi.
+
+## Glossary
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare urna est, non efficitur est sagittis sed. Etiam et diam rhoncus, pretium arcu vitae, lacinia neque. In lacinia eros ac porta varius. Duis eu diam vitae nisi porta blandit nec sed ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sapien nibh, accumsan ut purus vitae, ornare hendrerit risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas maximus urna sodales tellus laoreet, vitae accumsan diam condimentum. Vivamus pellentesque, augue volutpat consectetur consequat, arcu ante commodo nisl, eu semper eros nulla laoreet massa. Cras consectetur mattis condimentum. Proin cursus neque non fermentum pellentesque. Vestibulum ac eros eu sapien pharetra sagittis sed ut nulla. Nulla facilisi.
