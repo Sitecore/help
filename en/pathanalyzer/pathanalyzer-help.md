@@ -190,7 +190,7 @@ You can select various maps using the Map selector control. You can also see mor
 
 ### Group map data {#group-map-data}
 
-Maps are powered by [tree data structures](#tree) that consist of [nodes](#node). Because each node is expected to have a corresponding item in the content (master) database, using the Map selector's Group map data checkbox, you can request a map
+Maps are powered by [tree data structures](#tree) that consist of [nodes](#node). Because each [node](#node) is expected to have a corresponding item in the content (master) database, using the Map selector's Group map data checkbox, you can request a map
 having nodes grouped by the Sitecore data template (i.e. item type) from
 which they were created.
 
@@ -375,7 +375,7 @@ or goals, depending on the implementation specifics.
 Funnels in Path Analyzer enable you to analyze the actions and paths
 that customers take on their way to converting goals and outcomes. You
 can then optimize the paths to improve conversion rates, for example, by
-implementing personalization, M/V testing, or content testing.
+implementing <a href="<https://doc.sitecore.net/sitecore_experience_platform/digital_marketing/personalization/personalization>" target="_blank">personalization</a>, <a href="<https://doc.sitecore.net/sitecore_experience_platform/analyzing__reporting/experience_optimization__content_testing/ab_and_multivariate_testing>" target="_blank">M/V testing</a>, or <a href="<https://doc.sitecore.net/sitecore_experience_platform/analyzing__reporting/experience_optimization__content_testing>" target="_blank">content testing</a>.
 
 The Funnels feature is available from within the Context Pane, and
 allows selection and exploration of a funnel defined in Marketing
@@ -385,12 +385,12 @@ After a funnel is selected, you can view a graphical representation of
 the tracked steps from a funnel within Path Analyzer in the form of a
 bar chart. The chart provides you with information about the number of
 customers who complete each step in the funnel, as well as how many
-customers continue to the next stage. Below the chart, the list of
-metrics is shown, providing the key performance indicators for the
-funnel. These metrics are taken from the last step of the funnel.
+customers continue to the next stage. It also allows switching between key metrics, such as [visits](#visits), [value](#value) and [value per visit](#value-per-visit).
+Below the chart, the list of all other metrics is shown, providing the key performance indicators for the funnel. These metrics are taken from the last step of the funnel.
+This data is calculated based on the scope of an interaction as opposed to the lifetime customer journey.
 
-Any funnel can be marked as a favorite funnel for the currently selected
-map by clicking the star icon next to the funnel name.
+Any funnel can be marked as favorite by clicking the star icon next to the funnel name.
+This action will make the funnel visible on the [Dashboard view](#dashboard).
 
 You can save any selected path as a funnel by clicking the "Save as
 funnel" button in the footer area of the Context Pane.
@@ -410,26 +410,25 @@ path filter and click Apply. The map will adjust accordingly.
 
 ### Metrics filter {#metrics-filter}
 
-Focuses on filtering nodes by their key metrics: visits, value, value
-per visit and exit value potential. Because of its secondary nature to
-the main Path filter, Metrics filter is able to show how many matches
+Focuses on filtering nodes by their key metrics: [visits](#visits), [value](#value), [value
+per visit](#value-per-visit) and [exit value potential](#exit-value-potential).
+Because of its secondary nature to the main Path filter, Metrics filter is able to show how many matches
 for the current Path filter there are as well as the correlation between
 different metrics. Also, you can use the Metrics filter without Path
 filter and filter out less visited nodes, thus reducing noise on the
 current map. Finally, Metrics filter allows for finding interesting
 correlations between different metrics and for finding path optimization
-candidates, for example:\
-- High value per visit, but low visits (more engagement value to be
-gained)
+candidates, for example:
 
-- High [Exit value potential](#exit-value-potential), but low visits
-(more engagement value to be gained)
+- High [visits](#visits), but low [value](#value).
 
-- High visits, but low value (indicative of engagement value leakage)
+- High [value per visit](#value-per-visit), but low [visits](#visits).
+
+- High [Exit value potential](#exit-value-potential).
 
 ## Export a map {#export-map}
 
-You can export data from any map as a comma separated dataset via the
+You can export data for any map as a comma separated dataset via the
 following two commands from Action Menu:
 
 - Download as CSV
@@ -448,19 +447,19 @@ message bar.
 This message can be seen when the Table view is rendering extremely
 large maps. The Table view is able to show only the top 500 [full
 paths](#path). Suggested actions for this message are: use either the
-Path filter or the Metrics filter to decrease the number of visible
-rows; decrease the date range interval for the map; or create/use a
+[Path filter](#path-filter) or the [Metrics filter](#metrics-filter) to decrease the number of visible
+rows; decrease the date range interval for the map; or [create](#how-to-create-a-new-map) or [select](#map-selector) a
 filtered map that has less data.
 
 ### "X less significant nodes were grouped together with other nodes." {#other-nodes-message}
 This message can be seen using either the Radial, Horizontal or Vertical
 view on large maps with extreme fan outs. To ensure the map is readable,
-less significant nodes that cannot fit at a particular level of the tree
+less significant nodes that cannot fit at a particular level of the visualization
 are combined into a special 'other' node. Note that the Table view does
 not have this limitation. Suggested actions for this message are: use
-either the Path filter or the Metrics filter to decrease the number of
-visible rows; decrease the date range interval for the map; or
-create/use a filtered map that has less data.
+either the [Path filter](#path-filter) or the [Metrics filter](#metrics-filter) to decrease the number of
+visible nodes; decrease the date range interval for the map; or [create](#how-to-create-a-new-map) or [select](#map-selector) a
+filtered map that has less data.
 
 ### "The selected map is being built. You may see partial data." {#partial-map}
 This message can be seen if the currently selected map was recently deployed but the
@@ -490,46 +489,46 @@ These settings are available from the Action Menu -&gt; Settings.
 ### Map {#map}
 
 Marketing definition that describes how to build data for path analysis.
-Each deployed map has a tree stored in the database.
+Each deployed map has a [tree](#tree) stored in the reporting database.
 
 ### Tree {#tree}
 
-The aggregated data structure for path analysis that is stored for each
-deployed map consisting of nodes and paths.
+The aggregated data structure for path analysis that is stored in reporting database for each
+deployed map consisting of [nodes](#node) and [paths](#path).
 
 ### Node {#node}
 
-Nodes are the key elements of the tree. Depending on the map type, a
-node can either represent a page (on a Page map), or a goal, or any
-other marketing attribute (channel, campaign, etc.) on an Experience
-map.
+Nodes are the key elements of the [tree](#tree) that powers the [map](#map). Depending on the [map type](#map-types), a
+node can either represent a page (on a [Page map](#page-maps)), or a goal, or any
+other marketing attribute (channel, campaign, etc.) on an [Experience
+map](#experience-maps).
 
-Each node has a unique id, name and a GUID that corresponds to an item
+Each node has a unique numeric id, name and a GUID that corresponds to an item
 from the content database.
 
-There is a set of metrics that are stored on each node: value, visits,
-value per visit, exits, exit value, exit value per visit, average time
-spent, outcomes, monetary value, and average monetary value.
-
-### Path {#path}
-
-A sequence of nodes make up a path. Because of the aggregated nature of
-the tree, it's important to differentiate between two kinds of paths:
-entry path and full path.
-
-While a full path consists of an entire visit from the entry node to the
-[exit node](#exit-node), an entry path doesn't necessarily terminate
-with an exit node (node with Exits metric greater than 0).
-
-### Internet node {#internet-node}
-
-The special root node that serves as a starting node for all paths and
-aggregates all key metrics from all paths on the given map.
+There is a set of metrics that are stored on each node: [value](#value), [visits](#visits),
+[value per visit](#value-per-visit), [exits](#exits), [exit value](#exit-value), [exit value per visit](#exit-value-per-visit), [average time
+spent](#average-time-spent), [outcomes](#outcomes), [monetary value](#monetary-value), and [average monetary value](#average-monetary-value).
 
 ### Exit node {#exit-node}
 
-Node with Exits metric greater than zero, indicating the number of
-visits that terminated on this node.
+Node with [exits](#exits) greater than zero, indicating the number of [visits](#visits) that terminated on this node.
+
+### Internet node {#internet-node}
+
+The special root [node](#node) that serves as a starting node for all [paths](#path) and
+aggregates all key metrics from all paths on the given [map](#map).
+
+### Path {#path}
+
+A sequence of [nodes](#node) make up a path. Because of the aggregated nature of
+the [tree](#tree), it's important to differentiate between two kinds of paths:
+entry path and full path.
+
+While a full path consists of an entire visit from the entry node to the
+[exit node](#exit-node), an entry path doesn't have to end with an exit.
+It's important to understand the difference between the two, since the [Table view](#map-views) and [Reports feature](#reports)
+only work with the full paths.
 
 ### Visits metric {#visits}
 
@@ -540,15 +539,15 @@ The total aggregated engagement value on a given node. This includes value metri
 
 ### Value per visit metric {#value-per-visit}
 
-The aggregated engagement value per visit on a given node. This metric
-is instrumental in calculating Exit value potential.
+The aggregated engagement [engagement value](#value) divided by [visits](#visits) on a given node. This metric
+is instrumental in calculating [Exit value potential](#exit-value-potential).
 
 ### Exits metric {#exits}
 
 The total amount of exits on a given node. This metric identifies
 whether a given node comprises a full path vs. entry path. Any node with
 Exits greater than zero comprises a full path. This metric is
-instrumental in calculating Exit value potential.
+instrumental in calculating [Exit value potential](#exit-value-potential).
 
 ### Exit value metric {#exit-value}
 
@@ -558,22 +557,20 @@ metric, is that this metric doesn't take into account engagement value
 of the descendant nodes.
 
 ### Exit value per visit metric {#exit-value-per-visit}
-The aggregated engagement value per visit on a given node before exiting. Only nodes
+The aggregated [engagement value](#value) divided by [visits](#visits) on a given [exit node](#exit-node). Only nodes
 where exits occurred have this metric calculated. The difference between
-this metric and Value per visit metric, is that this metric doesn't
+this metric and [Value per visit](#value-per-visit) metric, is that this metric doesn't
 account for engagement value per visit of the descendant nodes. This
-metric is instrumental in calculating Exit value potential.
+metric is instrumental in calculating [Exit value potential](#exit-value-potential).
 
 ### Exit value potential metric {#exit-value-potential}
 
-The exit potential indicates projected engagement value that could be
-gained on average through optimization. Consider it an advanced bounce
-metric, where the engagement value loss (value leakage) is also taken
-into account besides just exits. Knowing how much value per visit is
-aggregated on all paths further down (Value per visit metric) and how
-much value per visit is stored on the exit node, this metric can be
-calculated by taking the delta between the two and multiplying by the
-number of exits, using the following formula:
+The exit potential indicates projected [engagement value](#value) that could be
+gained on average through optimization. It is only calculated for the [exit nodes](#exit-node).
+Consider it an advanced bounce metric, where the engagement value loss or value leakage is also taken
+into account besides just [exits](#exits). Knowing how much [value per visit](#value-per-visit) is
+aggregated on all paths further down and how much [value per visit](#value-per-visit) is stored on the [exit node](#exit-node), this metric can be
+calculated by taking the delta between the two and multiplying by the number of exits, using the following formula:
 
 (Value per visit - Exit value per visit) \* Exits
 
@@ -581,22 +578,22 @@ number of exits, using the following formula:
 
 The total number of outcomes realized on a given node. This includes
 outcomes from all descendant nodes.
-Learn more about a href="https://doc.sitecore.net/sitecore_experience_platform/developing/marketing_operations/outcomes/outcomes" target="_blank">outcomes</a> here.
+Learn more about outcomes <a href="https://doc.sitecore.net/sitecore_experience_platform/developing/marketing_operations/outcomes/outcomes" target="_blank">here</a>.
 
 ### Monetary value metric {#monetary-value}
 
-The total amount of monetary value gained on a given node. The monetary
+The total amount of monetary value gained on a given [node](#node). The monetary
 value is retrieved from realized outcomes. This includes monetary value
 from all descendant nodes.
-Learn more about a href="https://doc.sitecore.net/sitecore_experience_platform/developing/marketing_operations/outcomes/outcomes" target="_blank">outcomes</a> here.
+Learn more about outcomes <a href="https://doc.sitecore.net/sitecore_experience_platform/developing/marketing_operations/outcomes/outcomes" target="_blank">here</a>.
 
 ### Average monetary value metric {#average-monetary-value}
 
-The average monetary value gained per outcome on a given node. The
+The average monetary value gained per outcome on a given [node](#node). The
 monetary value is retrieved from realized outcomes. This includes
 average monetary value from all descendant nodes.
-Learn more about a href="https://doc.sitecore.net/sitecore_experience_platform/developing/marketing_operations/outcomes/outcomes" target="_blank">outcomes</a> here.
+Learn more about outcomes <a href="https://doc.sitecore.net/sitecore_experience_platform/developing/marketing_operations/outcomes/outcomes" target="_blank">here</a>.
 
 ### Average time spent metric {#average-time-spent}
 
-The average amount of time customers spent on a given node in seconds.
+The average amount of time customers spent on a given [node](#node) in seconds.

@@ -23,14 +23,11 @@ The size of the circle defines the total engagement value on the path that leads
 The Context Pane area shows the aggregated totals for the visits, value and value per visit metrics, as well as the total path count. If you are hovering over a particular path, the totals area will show the metrics from that path.
 
 ## Map selector {#map-selector}
-You can select various [maps](#map) using the Map selector control. You can also
-choose to see more map metadata, and add a map to your favorites list,
-which will automatically be saved to your profile.
+
+You can select various maps using the Map selector control. You can also see more map meta-data and add a map to your favorites list, which will automatically be saved to your profile.
 
 ### Group map data {#group-map-data}
-
-Since each node has a corresponding item in the content (master) database,
-using the Map selector's Group map data checkbox, you can request a map
+Because each [node](#node) is expected to have a corresponding item in the content (master) database, using the Map selector's Group map data checkbox, you can request a map
 having nodes grouped by the Sitecore data template (i.e. item type) from
 which they were created.
 
@@ -40,8 +37,7 @@ For example, you can group these two paths:
 
 - Home -&gt; Tablets -&gt; 12" tablet
 
-into a single path by selecting **Group map data** in the **Map
-selector** dialog.
+into a single path:
 
 - Landing Page -&gt; Product Category Page -&gt; Product Detail page
 
@@ -49,11 +45,13 @@ Grouping map data is useful when you'd like to perform path analysis on
 page category level vs. individual page level.
 
 ## Date range selector {#date-selector}
+
 You can select a date range using the date range selector either by
-selecting individual start and end dates from the calendars or by
+selecting individual start and end dates from the calendars, or by
 choosing one of the pre-defined date ranges.
 
 ### Dates missing data {#date-selector-missing-dates}
+
 There may be cases where a map has no available data for some dates,
 even if there are available data before or after these dates. This may
 be due to no interactions recorded for a date, or an error occurred
@@ -63,10 +61,10 @@ Please contact your system administrator if you encounter many dates in
 the calendar with no available data.
 
 ### Unavailable dates {#date-selector-unavailable-dates}
+
 Depending on the date range that you have selected, some dates can be
 marked as unavailable for selection. For example, when you select an end
-date, all dates prior to the current start date are marked as
-unavailable.
+date, all dates prior to the current start date are marked as unavailable. All future dates are also marked as unavailable.
 
 ## Metrics filter {#metrics-filter}
 
@@ -99,31 +97,37 @@ You can switch to another map using [map selector](#map-selector).
 
 ### Path {#path}
 
-A path is a sequence of nodes. All paths shown in Page Analyzer are going through the currently selected page.
+A path is a sequence of [nodes](#node). All paths shown in Page Analyzer are going through the currently selected page.
 
 ### Node {#node}
 
-Nodes are elements on a path. For most maps, nodes essentially translate to other pages. There is a set of metrics that are stored on each node: value, visits, value per visit, exits, exit value, exit value per visit, average time spent and average monetary value.
+Nodes are elements on a [path](#path). For most maps, nodes essentially translate to other pages.
+There is a set of metrics that are stored on each node: [value](#value), [visits](#visits),
+[value per visit](#value-per-visit), [exits](#exits), [exit value](#exit-value), [exit value per visit](#exit-value-per-visit), [average time
+spent](#average-time-spent).
+
+### Exit node {#exit-node}
+
+Node with [exits](#exits) greater than zero, indicating the number of [visits](#visits) that terminated on this node.
 
 ### Visits metric {#visits}
 
-The total aggregated visits on a given node. This includes visits metrics from all descendant
-nodes.
+The total aggregated visits on a given node. This includes visits metrics from all descendant nodes.
 
 ### Value metric {#value}
 The total aggregated engagement value on a given node. This includes value metrics from all descendant nodes.
 
 ### Value per visit metric {#value-per-visit}
 
-The aggregated engagement value per visit on a given node. This metric
-is instrumental in calculating Exit value potential.
+The aggregated engagement [engagement value](#value) divided by [visits](#visits) on a given node. This metric
+is instrumental in calculating [Exit value potential](#exit-value-potential).
 
 ### Exits metric {#exits}
 
 The total amount of exits on a given node. This metric identifies
 whether a given node comprises a full path vs. entry path. Any node with
 Exits greater than zero comprises a full path. This metric is
-instrumental in calculating Exit value potential.
+instrumental in calculating [Exit value potential](#exit-value-potential).
 
 ### Exit value metric {#exit-value}
 
@@ -133,21 +137,19 @@ metric, is that this metric doesn't take into account engagement value
 of the descendant nodes.
 
 ### Exit value per visit metric {#exit-value-per-visit}
-The aggregated engagement value per visit on a given node before exiting. Only nodes
+The aggregated [engagement value](#value) divided by [visits](#visits) on a given [exit node](#exit-node). Only nodes
 where exits occurred have this metric calculated. The difference between
-this metric and Value per visit metric, is that this metric doesn't
+this metric and [Value per visit](#value-per-visit) metric, is that this metric doesn't
 account for engagement value per visit of the descendant nodes. This
-metric is instrumental in calculating Exit value potential.
+metric is instrumental in calculating [Exit value potential](#exit-value-potential).
 
 ### Exit value potential metric {#exit-value-potential}
 
-The exit potential indicates projected engagement value that could be
-gained on average through optimization. Consider it an advanced bounce
-metric, where the engagement value loss (value leakage) is also taken
-into account besides just exits. Knowing how much value per visit is
-aggregated on all paths further down (Value per visit metric) and how
-much value per visit is stored on the exit node, this metric can be
-calculated by taking the delta between the two and multiplying by the
-number of exits, using the following formula:
+The exit potential indicates projected [engagement value](#value) that could be
+gained on average through optimization. It is only calculated for the [exit nodes](#exit-node).
+Consider it an advanced bounce metric, where the engagement value loss or value leakage is also taken
+into account besides just [exits](#exits). Knowing how much [value per visit](#value-per-visit) is
+aggregated on all paths further down and how much [value per visit](#value-per-visit) is stored on the [exit node](#exit-node), this metric can be
+calculated by taking the delta between the two and multiplying by the number of exits, using the following formula:
 
 (Value per visit - Exit value per visit) \* Exits
