@@ -26,7 +26,7 @@ KPIs](#map-kpis); [Top path entries](#top-path-entries); [Featured
 path](#featured-path); and access [Reports](#reports) and
 [Funnels](#funnels) features.
 
-Table view is another great way to start with path analysis. It uses a
+[Table view](#table-view) is another great way to start with path analysis. It uses a
 very familiar Excel-like visualization showing all paths and their key
 metrics, and allows sorting and filtering.
 
@@ -48,12 +48,12 @@ filter in order to get all paths from page A to page B. Page is used as
 an example here. For [Experience maps](#experience-maps), you can use
 this technique to filter paths leading to a goal.
 
-Optionally, you can use the Metrics filter described in [Scenario 1](#scenario1) to
+Optionally, you can use the [Metrics filter](#metrics-filter) described in [Scenario 1](#scenario1) to
 further refine a filtered map based on any combination of key metrics.
-After you apply a path filter, you can either explore various views by
+After you apply a [Path filter](#path-filter), you can either explore various views by
 [reading](#map-key) the filtered map, or leverage the [Reports feature](#reports) to quickly
 navigate top 10 paths in any given [report category](#reports). The
-reports will only show paths that match the applied path filter.
+reports will only show paths that match the applied [Path filter](#path-filter).
 
 ### 3. Macro-level path analysis (goals, events, outcomes) {#scenario3}
 
@@ -263,41 +263,38 @@ circles, indicating a high volume of [visits](#visits) to paths that have low
 Due to the limitations of tree views (Radial, Horizontal and Vertical)
 when visualizing large maps with extreme fan outs, less significant
 nodes that cannot fit at a particular level of the visualization are combined
-into a special "other" node. The Table view does not have this
+into a special "other" node. The [Table view](#table-view) does not have this
 limitation.
 
 You can see the list of nodes that were combined into "Other nodes" by
 selecting the Next tab within the Context Pane or selecting the Others
 tab within the node popover.
 
-Applying either Path filter or Metrics filter usually helps reduce the
+Applying either [Path filter](#path-filter) or [Metrics filter](#metrics-filter) usually helps reduce the
 number of "Other nodes" shown on a map.
 
 ## Map views {#map-views}
 
-Five views are available to choose from for analyzing your maps.
+There are five different views available to choose from for analyzing your maps.
+Dashboard is a default view that provides introductory insights to path analysis and is described [below](#dashboard).
 
--   Radial
+### Radial view {#radial-view}
+Radial view has an advantage of being able to fit more map data on the screen but
+is not ideal for smaller maps or filtered maps.
+The [Internet node](#internet-node) is at the center on this view.
 
--   Vertical
+### Vertical view {#vertical-view}
+Vertical view is much better at representing smaller maps or filtered maps and usually provides better readability
+compared to the [Radial view](#radial-view). The [Internet node](#internet-node) can be found at the very top on this view.
 
--   Horizontal
+### Horizontal view {#horizontal-view}
+Similar to Vertical view, Horizontal view is more optimal on smaller maps and usually provides better readability 
+compared to the [Radial view](#radial-view).
+The [Internet node](#internet-node) can be found at the far left side.
 
--   Table
-
--   Dashboard
-
-Radial view has an advantage of being able to fit more map data on the
-screen but is not ideal for smaller maps or filtered maps.
-
-Vertical and Horizontal map views are much better at representing
-smaller maps or filtered maps and usually provide better readability
-compared to the Radial view.
-
-Table view is rather different as it only shows only [full
-paths](#path), which is due to map data being a [tree structure](#tree) that cannot be easily viewed as a table.
-
-Dashboard is a special view described separately [below](#dashboard).
+### Table view {#table-view}
+Table view is rather different as it only shows only [full paths](#path), 
+which is due to map data being a [tree structure](#tree) that cannot be easily viewed as a table.
 
 ## Dashboard {#dashboard}
 
@@ -318,7 +315,9 @@ is today, the trend indicator will be based on the data from yesterday.
 
 ### Top path entries {#top-path-entries}
 
-This list shows the top 10 path starting points on the current map. In Path Analyzer terminology, these are the top 10 [nodes](#node) on the first level, sorted by combined [value](#value) plus [visits](#visits) metrics.
+This list shows the top 10 path starting points on the current map.
+In Path Analyzer terminology, these are the top 10 [nodes](#node) on the first level,
+sorted by combined [value](#value) and [visits](#visits) metrics.
 
 ### Featured path {#featured-path}
 
@@ -374,8 +373,10 @@ or goals, depending on the implementation specifics.
 
 Funnels in Path Analyzer enable you to analyze the actions and paths
 that customers take on their way to converting goals and outcomes. You
-can then optimize the paths to improve conversion rates, for example, by
-implementing <a href="<https://doc.sitecore.net/sitecore_experience_platform/digital_marketing/personalization/personalization>" target="_blank">personalization</a>, <a href="<https://doc.sitecore.net/sitecore_experience_platform/analyzing__reporting/experience_optimization__content_testing/ab_and_multivariate_testing>" target="_blank">M/V testing</a>, or <a href="<https://doc.sitecore.net/sitecore_experience_platform/analyzing__reporting/experience_optimization__content_testing>" target="_blank">content testing</a>.
+can then optimize the paths to improve conversion rates, for example, 
+by implementing <a href="https://doc.sitecore.net/sitecore_experience_platform/digital_marketing/personalization/personalization" target="_blank">personalization</a>,
+<a href="https://doc.sitecore.net/sitecore_experience_platform/analyzing__reporting/experience_optimization__content_testing/ab_and_multivariate_testing" target="_blank">M/V testing</a>,
+or <a href="https://doc.sitecore.net/sitecore_experience_platform/analyzing__reporting/experience_optimization__content_testing" target="_blank">content testing</a>.
 
 The Funnels feature is available from within the Context Pane, and
 allows selection and exploration of a funnel defined in Marketing
@@ -405,18 +406,23 @@ certain paths.
 Allows you to filter a map based on the name of a node, which could
 either be a page, a goal or any other marketing attribute depending on
 the type of the current map. For example, you can use Path filter to
-learn how customers move to a page of interest. Simply select a page in
-path filter and click Apply. The map will adjust accordingly.
+learn how customers arrive to a page of interest. Simply set a desired page as element of the Path filter and click Apply.
+The map will adjust accordingly.
+Path filter allows building a map filter from a Page A to a Page B as well.
+While it is not typical to require more than 3 elements in the Path filter, 
+you can specify any number of elements there.
+Path filter will narrow down the list of options based on the available data in the current map.
 
 ### Metrics filter {#metrics-filter}
 
-Focuses on filtering nodes by their key metrics: [visits](#visits), [value](#value), [value
+This filter focuses on filtering nodes by their key metrics: [visits](#visits), [value](#value), [value
 per visit](#value-per-visit) and [exit value potential](#exit-value-potential).
-Because of its secondary nature to the main Path filter, Metrics filter is able to show how many matches
-for the current Path filter there are as well as the correlation between
-different metrics. Also, you can use the Metrics filter without Path
-filter and filter out less visited nodes, thus reducing noise on the
-current map. Finally, Metrics filter allows for finding interesting
+Because of its secondary nature to the main [Path filter](#path-filter), Metrics filter is able to show how many matches
+for the current [Path filter](#path-filter) there are as well as the correlation between
+different metrics.
+Also, you can use the Metrics filter without [Path filter](#path-filter) and filter out less visited nodes, 
+thus reducing noise on the current map.
+Finally, Metrics filter allows for finding interesting
 correlations between different metrics and for finding path optimization
 candidates, for example:
 
@@ -444,8 +450,8 @@ Throughout application usage, you may see various messages in the
 message bar.
 
 ### "Table view shows top X paths out of Y total." {#table-top}
-This message can be seen when the Table view is rendering extremely
-large maps. The Table view is able to show only the top 500 [full
+This message can be seen when the [Table view](#table-view) is rendering extremely
+large maps. The [Table view](#table-view) is able to show only the top 500 [full
 paths](#path). Suggested actions for this message are: use either the
 [Path filter](#path-filter) or the [Metrics filter](#metrics-filter) to decrease the number of visible
 rows; decrease the date range interval for the map; or [create](#how-to-create-a-new-map) or [select](#map-selector) a
@@ -455,7 +461,7 @@ filtered map that has less data.
 This message can be seen using either the Radial, Horizontal or Vertical
 view on large maps with extreme fan outs. To ensure the map is readable,
 less significant nodes that cannot fit at a particular level of the visualization
-are combined into a special 'other' node. Note that the Table view does
+are combined into a special 'other' node. Note that the [Table view](#table-view) does
 not have this limitation. Suggested actions for this message are: use
 either the [Path filter](#path-filter) or the [Metrics filter](#metrics-filter) to decrease the number of
 visible nodes; decrease the date range interval for the map; or [create](#how-to-create-a-new-map) or [select](#map-selector) a
@@ -494,21 +500,26 @@ Each deployed map has a [tree](#tree) stored in the reporting database.
 ### Tree {#tree}
 
 The aggregated data structure for path analysis that is stored in reporting database for each
-deployed map consisting of [nodes](#node) and [paths](#path).
+deployed map consisting a hierarchy of [nodes](#node). Any tree has to have a special root node, which is called [Internet node](#internet-node).
 
 ### Node {#node}
 
-Nodes are the key elements of the [tree](#tree) that powers the [map](#map). Depending on the [map type](#map-types), a
-node can either represent a page (on a [Page map](#page-maps)), or a goal, or any
-other marketing attribute (channel, campaign, etc.) on an [Experience
-map](#experience-maps).
+Nodes are the key elements of the [tree](#tree), which in turn describes the data structure of the [map](#map).
+All nodes, except for the [Internet node](#internet-node), have a parent node and can have child nodes.
+Depending on the [map type](#map-types), a node can either represent a page (on a [Page map](#page-maps)), 
+or a goal, or any other marketing attribute (channel, campaign, etc.) on an [Experience map](#experience-maps).
 
-Each node has a unique numeric id, name and a GUID that corresponds to an item
-from the content database.
+Each node has a unique numeric id, name and a GUID that corresponds to an item from the content database.
 
-There is a set of metrics that are stored on each node: [value](#value), [visits](#visits),
-[value per visit](#value-per-visit), [exits](#exits), [exit value](#exit-value), [exit value per visit](#exit-value-per-visit), [average time
-spent](#average-time-spent), [outcomes](#outcomes), [monetary value](#monetary-value), and [average monetary value](#average-monetary-value).
+There are different kinds of metrics stored on each node: 
+
+- **Aggregated metrics**, including [value](#value), [visits](#visits), [average time spent](#average-time-spent), [outcomes](#outcomes) and [monetary value](#monetary-value).
+These metrics include values from all descendant nodes.
+
+- **Exit metrics**, including [exits](#exits), [exit value](#exit-value).
+These metrics do not include values from all descendant nodes and only calculated if the current node is an [Exit node](#exit-node).
+
+- **Calculated metrics**, including [value per visit](#value-per-visit), [exit value per visit](#exit-value-per-visit), [average monetary value](#average-monetary-value) and [Exit value potential](#exit-value-potential).
 
 ### Exit node {#exit-node}
 
@@ -523,12 +534,12 @@ aggregates all key metrics from all paths on the given [map](#map).
 
 A sequence of [nodes](#node) make up a path. Because of the aggregated nature of
 the [tree](#tree), it's important to differentiate between two kinds of paths:
-entry path and full path.
+**entry path** and **full path**.
 
-While a full path consists of an entire visit from the entry node to the
-[exit node](#exit-node), an entry path doesn't have to end with an exit.
-It's important to understand the difference between the two, since the [Table view](#map-views) and [Reports feature](#reports)
-only work with the full paths.
+While a **full path** consists of an entire visit from the entry node to the
+[exit node](#exit-node), an **entry path** doesn't have to end with an exit.
+It's important to understand the difference between the two, 
+since the [Table view](#map-views) and [Reports feature](#reports) only work with the full paths.
 
 ### Visits metric {#visits}
 
@@ -539,8 +550,9 @@ The total aggregated engagement value on a given node. This includes value metri
 
 ### Value per visit metric {#value-per-visit}
 
-The aggregated engagement [engagement value](#value) divided by [visits](#visits) on a given node. This metric
-is instrumental in calculating [Exit value potential](#exit-value-potential).
+The aggregated engagement [engagement value](#value) divided by [visits](#visits) on a given node.
+Sometimes, this metric is defined as **efficiency**.
+This metric is instrumental in calculating [Exit value potential](#exit-value-potential).
 
 ### Exits metric {#exits}
 
@@ -552,8 +564,8 @@ instrumental in calculating [Exit value potential](#exit-value-potential).
 ### Exit value metric {#exit-value}
 
 The aggregated engagement value on a given node before exiting. Only nodes where exits
-occurred have this metric. The difference between this metric and Value
-metric, is that this metric doesn't take into account engagement value
+occurred have this metric. The difference between this metric and [Value
+metric](#value), is that this metric doesn't take into account engagement value
 of the descendant nodes.
 
 ### Exit value per visit metric {#exit-value-per-visit}
