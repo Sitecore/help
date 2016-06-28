@@ -48,12 +48,13 @@ filter in order to get all paths from page A to page B. Page is used as
 an example here. For [Experience maps](#experience-maps), you can use
 this technique to filter paths leading to a goal.
 
-Optionally, you can use the [Metrics filter](#metrics-filter) described in [Scenario 1](#scenario1) to
+Similar to the [Scenario #1](#scenario1), you can use the [Metrics filter](#metrics-filter) to 
 further refine a filtered map based on any combination of key metrics.
-After you apply a [Path filter](#path-filter), you can either explore various views by
+
+After you apply the filter, you can either explore various views by
 [reading](#map-key) the filtered map, or leverage the [Reports feature](#reports) to quickly
 navigate top 10 paths in any given [report category](#reports). The
-reports will only show paths that match the applied [Path filter](#path-filter).
+reports will only show paths that match the applied [Path filter](#path-filter) and [Metrics filter](#metrics-filter).
 
 ### 3. Macro-level path analysis (goals, events, outcomes) {#scenario3}
 
@@ -163,22 +164,33 @@ Three Experience maps are available by default:
 
 You can easily [create a new map](#how-to-create-a-new-map) based on any existing map using Marketing Control Panel.
 
-In addition to map types, maps can either be global or site-specific. Global maps are built for all sites, while site-specific maps are only built for a particular site. Whether a map is global or site-specific is determined by the location of the
-map within the Path Analyzer's content tree in Marketing Control Panel. All global maps are placed under /Maps/Default maps/Global maps and all site-specific maps are
-placed under /Maps/Default maps/Site maps.
+### Site-specific maps {#site-specific-maps}
+In addition to map types, maps can either be **global** or **site-specific**. Global maps are built for all sites, while site-specific maps are only built for a particular site. Whether a map is global or site-specific is determined by the location of the
+map within the Path Analyzer's content tree in Marketing Control Panel. All global maps are placed under */Maps/Default maps/Global maps* and all site-specific maps are
+placed under */Maps/Default maps/Site maps*.
 
-Custom maps may also be present in your Sitecore implementation, depending on whether or not there were any custom maps registered - which typically requires minor development effort.
+### Custom maps {#custom-maps}
+
+Custom maps may also be present in your Sitecore implementation under */Maps/Custom maps*, depending on whether or not there were any custom maps registered - which typically requires minor development effort.
 
 ### How to create a new map {#how-to-create-a-new-map}
 
 Here are the steps to create a brand new map.
+
 1. Open Marketing Control Panel from Launchpad
+
 2. Navigate to the Path Analyzer item.
+
 3. Expand the Maps item underneath Path Analyzer.
+
 4. Select the appropriate folder for your new map based on the available map types described above.
+
 5. Create a new map item.
+
 6. Specify the required attributes and any optional attributes for your map.
+
 7. Save the map item.
+
 8. Deploy it via the Deploy workflow command from the Review tab. 
 
 Approximately 30 minutes after deployment, historic and live data for the map will
