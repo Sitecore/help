@@ -14,7 +14,7 @@ The horizontal lines that are flowing from the currently selected page to the ri
 
 The circles placed on top of the lines represent [nodes](#node) on that path. Nodes generally translate to pages. In order to simplify the visualization, only the first page is shown on outgoing paths.
 
-The linethickness defines the total [visits](#visits) to the currently selected page from the path. The thicker the path, the more visits are going to the selected page for a given path.
+The line thickness defines the total [visits](#visits) to the currently selected page from the path. The thicker the path, the more visits are going to the selected page for a given path.
 
 The line color defines the [value per visit](#value-per-visit) on this path to the currently selected page. The greener the path, the higher value per visit is comparing to other paths leading into the currently selected page. Paths with the least value per visit are shown in red color.
 
