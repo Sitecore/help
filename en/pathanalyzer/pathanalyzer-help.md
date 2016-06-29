@@ -13,12 +13,11 @@ and on their way to converting business critical activities, such as
 
 ### 1. Exploring the map {#scenario1}
 
-[Understanding the key visualization cues](#map-key) and data behind those cues 
-is important to be able to read any map effectively and spot patterns.
+[Understanding the key visualization cues](#map-key) and data behind them is important to be able to read any map effectively and spot patterns.
 The features listed below are useful as you begin your path analysis, 
 especially if it's your first time using the application and you are not sure where to start.
 
-[Reports feature](#reports), available from the Context Pane, helps quickly highlight paths in any given report category.
+[Reports feature](#reports), available from the Context Pane, helps to quickly highlight paths in any given report category.
 For example, if you'd like to see all paths that don't generate any [engagement value](#value), 
 simply pick the "Paths without value" category and click through the top 10 paths.
 There are [8 total report categories](#reports) to explore.
@@ -69,7 +68,7 @@ If you'd like to understand how your customers interact with your brand through 
 ### 5. Exploring a map focused on a particular segment {#scenario5}
 
 In order to explore paths from a particular customer segment, [create a
-new map](#how-to-create-a-new-map) then specify your segment rules in the Filter field using the familiar Rule Editor interface.
+new map](#how-to-create-a-new-map) then specify your segment rules in the Filter field using the familiar <a href="https://doc.sitecore.net/sitecore_experience_platform/digital_marketing/personalization/the_rule_set_editor" target="_blank">Rule Set Editor</a> interface.
 After the new map is deployed, you can select it in the Map selector and explore it the same way you would explore the default maps.
 
 ### 6. Exploring paths leading to a goal {#scenario6}
@@ -78,10 +77,9 @@ One way to explore paths leading to a given goal is to use the default
 [Experience map with goals](#experience-maps) and specify the goal
 in the [Path filter](#path-filter).
 
-Another way is to [create and deploy](#how-to-create-a-new-map) a new
-[Goal map](#goal-maps), which will focus only on the paths towards the
-specified goal. You can use the same technique to explore paths to
-certain assets or outcomes.
+Another way is to [create and deploy](#how-to-create-a-new-map) a new [Goal map](#goal-maps), 
+which will focus only on the paths toward the specified goal.
+You can use the same technique to explore paths to certain assets or outcomes.
 
 ## Maps {#maps}
 
@@ -89,8 +87,7 @@ A map is a special marketing definition for path analysis that has two
 key attributes: map type and map filter. Map type describes how to build
 data that powers the map, and is covered in more detail
 [here](#map-types). Map filter, an optional but important attribute,
-helps define a segmented map using the Rule Editor based on a rich set
-of conditions.
+helps define a segmented map using the <a href="https://doc.sitecore.net/sitecore_experience_platform/digital_marketing/personalization/the_rule_set_editor" target="_blank">Rule Set Editor</a> and a rich set of conditions.
 
 In addition to these two key attributes, each map has a unique identifier, name
 and type. You can also include other optional attributes, such as
@@ -194,12 +191,12 @@ To create a brand new map:
 
 8. Deploy the new map using the Deploy workflow command on the Review tab.
 
-Approximately 30 minutes after deployment, historic and live data for the map will
-begin building.
+Historic and live data for the map will begin building approximately 30 minutes after deployment.
 
 ## Map selector {#map-selector}
 
-You can select various maps using the Map selector control. You can also see more map meta-data and add a map to your favorites list, which will automatically be saved to your profile.
+You can select various maps using the Map selector control.
+You can also see more map meta-data and add a map to your favorites list, which will automatically be saved to your profile.
 
 ### Group map data {#group-map-data}
 
@@ -236,7 +233,8 @@ Please contact your system administrator if you encounter many dates in the cale
 
 Depending on the date range that you have selected, some dates can be
 marked as unavailable for selection. For example, when you select an end
-date, all dates prior to the current start date are marked as unavailable. All future dates are also marked as unavailable.
+date, all dates prior to the current start date are marked as unavailable.
+All future dates are also marked as unavailable.
 
 ## Map key {#map-key}
 
@@ -265,7 +263,7 @@ Lines connecting the map nodes represent paths between [node](#node) A and [node
 The thickness of a line indicates how many [visits](#visits) (traffic) went from [node](#node) A to [node](#node) B compared to the siblings of [node](#node) B, 
 which allows for easy identification of high traffic paths.
 
-Partial shading of a [path](#path) line is complementary to path thickness and is used to represent path visits at deeper levels, where it is more
+A partial shading of a line is complementary to line thickness and is used to represent path visits at deeper levels, where it is more
 difficult to see differences in line thickness.
 
 As a general guideline, look for thick lines with either small or red
@@ -275,7 +273,7 @@ circles, indicating a high volume of [visits](#visits) to paths that have low
 ### Other nodes {#other-nodes}
 
 Due to the limitations of tree views (Radial, Horizontal and Vertical)
-when visualizing large maps with extreme fan outs, less significant
+when visualizing large maps with extreme fanouts, less significant
 nodes that cannot fit at a particular level of the visualization are combined
 into a special "other" node. The [Table view](#table-view) does not have this
 limitation.
@@ -315,7 +313,7 @@ which is due to the map data being a [tree structure](#tree) that cannot be easi
 Dashboard is a special view that provides introductory insights to path analysis.
 
 ### Map KPIs  {#map-kpis}
-There are 6 Key Performance Indicators (KPI) available on the dashboard
+There are six Key Performance Indicators (KPI) available on the dashboard
 by default for the following metrics: [visits](#visits), [value](#value), [value per visit](#value-per-visit), 
 and optional outcome metrics: [monetary value](#monetary-value), [outcomes](#outcomes), and [average monetary value](#average-monetary-value).
 
@@ -349,7 +347,7 @@ A Favorite funnel is a funnel that was marked as favorite on a particular map. T
 
 The Path Analyzer reports show top paths in various categories.
 Reports provide an introduction to the most interesting paths in the currently selected map, enabling you to quickly identify of good and bad paths.
-By default, there are 8 report categories available.
+By default, there are eight report categories available.
 Up to 10 paths are available for selection in each category.
 
 ### Highest visited {#highest-visited-report}
@@ -365,7 +363,7 @@ The paths that generate the highest [engagement value](#value) and the highest [
 The paths that generate the highest [value per visit](#value-per-visit).
 
 ### Paths without value {#paths-without-value-report}
-The paths where customers exited without any [engagement value](#value) generated.
+The paths where customers exited without generating any [engagement value](#value).
 
 ### Highest exit value potential {#highest-evp-report}
 The paths that generate the highest [exit value potential](#exit-value-potential).
@@ -419,7 +417,7 @@ Simply set a particular page as an element of the Path filter and click Apply.
 The map will adjust accordingly.
 
 Path filter lets you build a map filter from Page A to Page B as well.
-Usually, you won't require more than 3 elements in the Path filter, but you can specify any number of elements there.
+Usually, you won't require more than three elements in the Path filter, but you can specify any number of elements there.
 The Path filter narrows down the list of options based on the available data in the current map.
 
 ### Metrics filter {#metrics-filter}
@@ -466,7 +464,7 @@ filtered map that has less data.
 
 ### "X less significant nodes were grouped together with other nodes." {#other-nodes-message}
 This message can be seen using either the Radial, Horizontal, or Vertical
-view on large maps with extreme fan outs. To ensure the map is readable,
+view on large maps with extreme fanouts. To ensure the map is readable,
 less significant nodes that cannot fit at a particular level of the visualization
 are combined into a special 'other' node. Note that the [Table view](#table-view) does
 not have this limitation. Suggested actions for this message are: use
@@ -573,7 +571,7 @@ This metric is instrumental in calculating [exit value potential](#exit-value-po
 
 The aggregated engagement value on a given node before exiting.
 Only nodes where exits occurred have this metric.
-The difference between this metric and the [value metric](#value) is that this metric doesn't take into account engagement value of the descendant nodes.
+The difference between this and the [value metric](#value) is that the exit value metric doesn't take into account engagement value of the descendant nodes.
 
 ### Exit value per visit metric {#exit-value-per-visit}
 The aggregated [engagement value](#value) divided by [visits](#visits) on a given [exit node](#exit-node). Only nodes
@@ -584,7 +582,7 @@ This metric is instrumental in calculating [exit value potential](#exit-value-po
 
 ### Exit value potential metric {#exit-value-potential}
 
-The exit potential indicates projected [engagement value](#value) that could be
+The exit potential indicates a projected [engagement value](#value) that could be
 gained on average through optimization. It is only calculated for the [exit nodes](#exit-node).
 You can consider it an advanced bounce metric, where the engagement value loss or value leakage is also taken
 into account besides just [exits](#exits). If you know how much [value per visit](#value-per-visit) is
