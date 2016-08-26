@@ -13,7 +13,7 @@ Udgangsområdet viser antallet af udgange på den aktuelt valgte side og det sam
 
 De vandrette linjer, der går ind *i* den aktuelt valgte side, repræsenterer indgående stier. Cirklerne, der er placeret øverst på linjerne, repræsenterer [noder](#node) på stien. Noder oversættes generelt til sider.
 
-De vandrette linjer, der går *fra* den aktuelt valgte side til højre, repræsenterer udgående stier. Cirklerne, der er placeret øverst på linjerne, repræsenterer [nodes](#node) på stien. Noder oversættes generelt til sider. For at forenkle visualisering, er det kun den første side, der er vist på udgående stier.
+De vandrette linjer, der går *fra* den aktuelt valgte side til højre, repræsenterer udgående stier. Cirklerne, der er placeret øverst på linjerne, repræsenterer [noder](#node) på stien. Noder oversættes generelt til sider. For at forenkle visualisering, er det kun den første side, der er vist på udgående stier.
 
 Linjetykkelsen definerer det samlede antal [besøg](#value-per-visit) på den aktuelt valgte side fra den specifikke sti. 
 Jo tykkere stien er, jo flere besøg kommer der til den side for en given sti.
@@ -35,7 +35,7 @@ Du kan vælge forskellige kort med kortvælgerkontrollen. Du kan også se flere 
 ### Grupper kortdata {#group-map-data}
 
 Kort drives af trædatastrukturer, der består af [noder](#node).
-Da hver enkelt [noder](#node) forventes at have et tilhørende element i indholds(master)-databasen,
+Da hver enkelt [noder](#node) forventes at have et tilhørende element i indholds (master)-databasen,
 hvis du vælger kortvælgerens afkrydsningsfelt Grupper kortdata, grupperes noderne af Sitecore-dataskabelonen, hvorfra de var oprettet.
 
 Du kan f.eks. gruppere disse to stier:
