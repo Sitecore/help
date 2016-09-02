@@ -1,4 +1,4 @@
-# Kom i gang med Path Analyzer {#intro}
+﻿# Kom i gang med Path Analyzer {#intro}
 Med Path Analyzer kan du analysere de stier, som kunder følger, når de
 interagerer med dit brand, med fokus på identifikation af de mest
 effektive og mindst effektive stier og stier med potentiale til
