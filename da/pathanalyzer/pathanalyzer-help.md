@@ -609,8 +609,8 @@ meddelelsesbjælken.
 
 Denne meddelelse kan ses, når [tabelvisning](#table-view) gengiver
 ekstremt store kort. [Tabelvisning](#table-view) kan kun vise top 500
-[fulde stier/a\>. Anbefalede handlinger for denne meddelelse er: Anvend
-enten](#path)[stifilteret](#path-filter) eller
+[fulde stier](#path). Anbefalede handlinger for denne meddelelse er: Anvend
+enten] [stifilteret](#path-filter) eller
 [metrik-filteret](#metrics-filter) for at sænke antallet af synlige
 række; gør datoområdets interval mindre for kortet; eller
 [opret](#how-to-create-a-new-map), eller [vælg](#map-selector) et
